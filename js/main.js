@@ -22,14 +22,47 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.map__info-container',
+    infinite: true,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1200,
         settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1100,
+        settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2.7,
+          centerMode: false
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 635,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 359,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
         }
       }
     ]
@@ -39,7 +72,51 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.slider-surf',
-    focusOnSelect: true
+    infinite: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+          infinite: true,
+          cssEase: 'linear'
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2.6,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 635,
+        settings: {
+          slidesToShow: 1.9
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1.6
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
+        }
+      }
+    ]
   })
   $('.slider-holder, .shop__slider').slick({
     infinite: true,
