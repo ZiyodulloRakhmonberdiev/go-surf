@@ -196,4 +196,6 @@ $(function () {
   $('.menu-btn').on('click', function () {
     $('.aside-header__menu').toggleClass('active')
   })
+
+  new WOW().init()
 })
